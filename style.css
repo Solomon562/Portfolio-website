@@ -91,7 +91,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 80px 10%;
+    padding: 2rem;
     flex-wrap: wrap;
 }
 
@@ -99,6 +99,7 @@ body{
     flex: 1;
     max-width: 500px;
     animation: fadeIn 1.2s ease;
+    margin: 1rem;
 }
 
 .text .light{
@@ -114,6 +115,12 @@ body{
     object-fit: cover;
     box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
     animation: fadeIn 1.5s ease;
+}
+
+.hero img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 .hero p{
@@ -153,6 +160,11 @@ body{
         align-items: center;
         text-align: center;
         padding: 40px 20px;
+    }
+
+    .text, .hero img{
+        width: 100%;
+        margin: 1rem 0;
     }
     .navbar{
         flex-direction: column;
@@ -414,4 +426,18 @@ section h2::after{
 
 .contact-form button.btn{
     align-self: center;
+}
+
+button{
+    background-color: orange;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: darkorange;
 }
